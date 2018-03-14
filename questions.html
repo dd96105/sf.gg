@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href="css/index.css" rel="stylesheet"/>
+  </head>
+  <body>
+  	<nav style="height: 108px;" class="hidden-xs">
+  		<div class="container nav3">
+  			<div class="row hidden-xs">
+  				<div class="col-sm-8 col-md-9 col-lg-9 nav1">
+  					<a href="index.html"></a>
+  					<div class="navbar fox-nav">
+						  <div class="container">
+						    <div class="navbar-header">
+						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						      <ul class="nav navbar-nav">
+						        <li><a href="index.html">首页</a></li>
+						        <li><a href="questions.html" style="color: #009a61;">问答</a></li>
+						        <li><a href="blogs.html">专栏</a></li>
+						        <li><a href="lives.html">讲堂</a></li>
+						        <li><a href="label.html">标签</a></li>
+						        <li class="li_1">
+						        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现<span class="caret"></span></a>
+							          <ul class="dropdown-menu">
+							            <li><a href="#">活动</a></li>
+							            <li><a href="#">技术圈</a></li>
+							            <li><a href="#">找工作</a></li>
+							            <li><a href="#">排行榜</a></li>
+							            <li><a href="#">徽章</a></li>
+							            <li><a href="#">笔记</a></li>
+							            <li><a href="#">开发手册</a></li>
+							            <li><a href="#">广告投放</a></li>
+							          </ul>
+						        </li>
+						      </ul>
+						      <form class="search  hidden-sm hidden-xs pull-right">
+						      	<button class="btn btn-link">
+						      		<span class="glyphicon glyphicon-search"></span>
+						      	</button>
+						      	<input id="searchBox" name="q" type="text" placeholder="搜索问题或关键字" class="form-control" value="">
+						      </form>
+						    </div>
+						  </div>
+						</div>
+  				</div>
+  			</div>
+  			<div class="col-sm-4 col-md-3 col-lg-3 nav2">
+  					<a href="#" class="btn btn-nav" data-toggle="modal" data-target="#exampleModal">免费注册</a>
+  					<a href="#" class="btn btn-nav" style="margin-bottom:2px;" data-toggle="modal" data-target="#exampleModal">立即登录</a>
+  			</div>
+  		</div>
+  		<div class="nav-label">
+  				<span>
+  					<a href="#">全部</a>
+  				</span>
+  				<ul>
+  					<li >
+  						<a  href="#">javascript</a>
+  					</li>
+  					<li >
+  						<a  href="#">php</a>
+  					</li>
+  					<li >
+  						<a  href="#">python</a>
+  					</li>
+  					<li >
+  						<a  href="#">java</a>
+  					</li>
+  					<li >
+  						<a  href="#">mysql</a>
+  					</li>
+  					<li >
+  						<a  href="#">ios</a>
+  					</li>
+  					<li >
+  						<a  href="#">android</a>
+  					</li>
+  					<li >
+  						<a  href="#">node.js</a>
+  					</li>
+  					<li >
+  						<a  href="#">html5</a>
+  					</li>
+  					<li >
+  						<a  href="#">linux</a>
+  					</li>
+  					<li >
+  						<a  href="#">c++</a>
+  					</li>
+  					<li >
+  						<a  href="#">css3</a>
+  					</li>
+  					<li >
+  						<a  href="#">git</a>
+  					</li>
+  					<li >
+  						<a  href="#">golang</a>
+  					</li>
+  					<li >
+  						<a  href="#">ruby</a>
+  					</li>
+  					<li >
+  						<a  href="#">vim</a>
+  					</li>
+  					<li >
+  						<a  href="#">docker</a>
+  					</li>
+  					<li >
+  						<a  href="#">mongodb</a>
+  					</li>
+  				</ul>
+  				<a href="#" class="pull-right" style="color: #9e9e9e;">热门标签</a>
+  		</div>
+  		</div>
+  	</nav>
+  	<div class="small-nav visible-xs-block">
+  		<span class="glyphicon glyphicon-search pull-left"></span>
+  		<a href="index.html"></a>
+  		<span class="glyphicon glyphicon-user pull-right"></span>
+  	</div>
+  	<div class="header alert alert-warning alert-dismissible hidden-sm hidden-xs" role="alert">
+  		<div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-7">
+                <h2 class="title">在 SegmentFault，学习技能、解决问题</h2>
+                <p class="desc">每个月，我们帮助 1000 万的开发者解决各种各样的技术问题。并助力他们在技术能力、职业生涯、影响力上获得提升。</p>
+            </div>
+            <div class="col-lg-3 col-lg-offset-3 col-md-4 col-md-offset-1 header1">
+                <a href="#" class="btn btn-lg btn-nav" data-toggle="modal" data-target="#exampleModal">立即登录</a>
+                <a href="#" class="btn btn-lg btn-nav" data-toggle="modal" data-target="#exampleModal">免费注册</a>
+            </div>
+        </div>
+    	</div>
+    	 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    	 	<span aria-hidden="true">&times;</span>
+    	 </button>
+  	</div>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-12 col-md-9">
+  				<div>
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">最新问答</a></li>
+					    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">热门问答</a></li>
+					    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">等待回答</a></li>
+					    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">付费问答</a></li>
+					  </ul>
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="home">
+					    	<div class="new-issue">
+					    		<div class="vote">
+					    			<p>0</p>
+					    			<p>得票</p>
+					    		</div>
+					    		<div class="solve">
+					    			<p>5</p>
+					    			<p>解决</p>
+					    		</div>
+					    		<div class="browse">
+					    			<p>28</p>
+					    			<p>浏览</p>
+					    		</div>
+					    		<div class="issue-content">
+					    			<span>藕丝空间</span>
+					    			<span>刚刚回答</span>
+					    			<p><a href="#">变量n2的值为啥不是`[6]`?</a></p>
+					    		</div>
+					    	</div>
+					    	<div class="new-issue">
+					    		<div class="vote">
+					    			<p>0</p>
+					    			<p>得票</p>
+					    		</div>
+					    		<div class="solve">
+					    			<p>5</p>
+					    			<p>解决</p>
+					    		</div>
+					    		<div class="browse">
+					    			<p>28</p>
+					    			<p>浏览</p>
+					    		</div>
+					    		<div class="issue-content">
+					    			<span>藕丝空间</span>
+					    			<span>刚刚回答</span>
+					    			<p><a href="#">变量n2的值为啥不是`[6]`?</a></p>
+					    		</div>
+					    	</div>
+					    	<div class="new-issue">
+					    		<div class="vote">
+					    			<p>0</p>
+					    			<p>得票</p>
+					    		</div>
+					    		<div class="solve">
+					    			<p>5</p>
+					    			<p>解决</p>
+					    		</div>
+					    		<div class="browse">
+					    			<p>28</p>
+					    			<p>浏览</p>
+					    		</div>
+					    		<div class="issue-content">
+					    			<span>藕丝空间</span>
+					    			<span>刚刚回答</span>
+					    			<p><a href="#">变量n2的值为啥不是`[6]`?</a></p>
+					    		</div>
+					    	</div>
+					    	<div class="new-issue">
+					    		<div class="vote">
+					    			<p>0</p>
+					    			<p>得票</p>
+					    		</div>
+					    		<div class="solve">
+					    			<p>5</p>
+					    			<p>解决</p>
+					    		</div>
+					    		<div class="browse">
+					    			<p>28</p>
+					    			<p>浏览</p>
+					    		</div>
+					    		<div class="issue-content">
+					    			<span>藕丝空间</span>
+					    			<span>刚刚回答</span>
+					    			<p><a href="#">变量n2的值为啥不是`[6]`?</a></p>
+					    		</div>
+					    	</div>
+					    	<div class="new-issue">
+					    		<div class="vote">
+					    			<p>0</p>
+					    			<p>得票</p>
+					    		</div>
+					    		<div class="solve">
+					    			<p>5</p>
+					    			<p>解决</p>
+					    		</div>
+					    		<div class="browse">
+					    			<p>28</p>
+					    			<p>浏览</p>
+					    		</div>
+					    		<div class="issue-content">
+					    			<span>藕丝空间</span>
+					    			<span>刚刚回答</span>
+					    			<p><a href="#">变量n2的值为啥不是`[6]`?</a></p>
+					    		</div>
+					    	</div>
+					    	<div class="new-issue">
+					    		<div class="vote">
+					    			<p>0</p>
+					    			<p>得票</p>
+					    		</div>
+					    		<div class="solve">
+					    			<p>5</p>
+					    			<p>解决</p>
+					    		</div>
+					    		<div class="browse">
+					    			<p>28</p>
+					    			<p>浏览</p>
+					    		</div>
+					    		<div class="issue-content">
+					    			<span>藕丝空间</span>
+					    			<span>刚刚回答</span>
+					    			<p><a href="#">变量n2的值为啥不是`[6]`?</a></p>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+					    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+					    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+					    <div role="tabpanel" class="tab-pane" id="settin">...</div>
+					  </div>
+					</div>
+  			</div>
+  			<div class="col-xs-12 col-md-3 right">
+  				<div class="div hidden-sm">
+  					<div>
+  						<a href="#">
+  							<img src="img/6.png"/>
+  						</a>
+  					</div>
+  					<div>
+  						<a href="#">
+  							<img src="img/7.png"/>
+  						</a>
+  					</div>
+  					<div>
+  						<a href="#">
+  							<img src="img/8.png"/>
+  						</a>
+  					</div>
+  				</div>
+  				<div class="div1">
+  					<h4>
+  						<a href="#">讲堂推荐</a>
+  					</h4>
+  					<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="img/9.png">
+						      <div>
+						        <a href="#">android线程同步那些事儿</a>
+						        <p>(23 人参与)</p>
+						        <span>￥1.00</span>
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="img/10.png">
+						      <div>
+						        <a href="#">SpringBoot搭建自己的个人博客(一)</a>
+						        <p>(20 人参与)</p>
+						        <span>￥16.00</span>
+						      </div>
+						    </div>
+						  </div>
+						  <!-- Controls -->
+						  <a class="ctl" href="#carousel-example-generic1" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						  </a>
+						</div>
+  				</div>
+  				<div class="div2">
+  					<div>
+  						<span>活动推荐</span>
+  						<a href="#">更多</a>
+  					</div>
+  					<div>
+  						<a href="#">
+  							<div>
+  								<p>FEB</p>
+  								<p>03</p>
+  							</div>
+  							<div>
+  								<p>【广州站】CODING 技术小馆：高可用实践探索</p>
+  								<span>广州</span>
+  								<span>·</span>
+  								<span>02-03 周六</span>
+  								<span>·</span>
+  								<span>报名中</span>
+  							</div>
+  						</a>
+  						<a href="#">
+  							<div>
+  								<p>MAR</p>
+  								<p>10</p>
+  							</div>
+  							<div>
+  								<p>首届NEO开发者大赛</p>
+  								<span>上海</span>
+  								<span>·</span>
+  								<span>03-10 周六</span>
+  								<span>·</span>
+  								<span>报名中</span>
+  							</div>
+  						</a>
+  						<a href="#">
+  							<div>
+  								<p>MAR</p>
+  								<p>28</p>
+  							</div>
+  							<div>
+  								<p>阿里云API应用创新大赛启动</p>
+  								<span>杭州</span>
+  								<span>·</span>
+  								<span>03-28 周六</span>
+  								<span>·</span>
+  								<span>报名中</span>
+  							</div>
+  						</a>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+    
+  </body>
+</html>
